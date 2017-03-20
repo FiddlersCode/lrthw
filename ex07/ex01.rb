@@ -1,8 +1,13 @@
+# puts string
 puts "Mary had a little lamb."
+# puts string
 puts "Its fleece was white as #{'snow'}."
+# puts string
 puts "And everywhere that Mary went."
+# puts string ten times
 puts "." * 10 # what'd that do?
 
+# sets variables to equal the letters below
 end1 = "C"
 end2 = "h"
 end3 = "e"
@@ -17,5 +22,5 @@ end11 = "e"
 end12 = "r"
 
 # watch that print vs. puts on this line what's it do?
-print end1 + end2 + end3 + end4 + end5 + end6 
+print end1 + end2 + end3 + end4 + end5 + end6
 puts end7 + end8 + end9 + end10 + end11 + end12
