@@ -1,18 +1,18 @@
-user_name = ARGV.first # gets the first argument
-prompt = '\\\\ '
+first, second = ARGV # gets the first two arguments
+space = '*** '
 
-puts "Hi #{user_name}."
+puts "Hi #{first} #{second}."
 puts "I'd like to ask you a few questions."
-puts "Do you like me #{user_name}? "
-puts prompt
+puts "Do you like me #{first} #{second}? "
+puts space
 likes = $stdin.gets.chomp
 
-puts "Where do you live #{user_name}? "
-puts prompt
+puts "Where do you live #{first} #{second}? "
+puts space
 lives = $stdin.gets.chomp
 
 # a comma for puts is like using it twice
-puts "What kind of computer do you have? ", prompt
+puts "What kind of computer do you have? ", space
 computer = $stdin.gets.chomp
 
 puts """
