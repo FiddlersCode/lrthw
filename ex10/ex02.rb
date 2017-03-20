@@ -1,0 +1,12 @@
+backslash = "I'm a \\."
+singlequote = "I don't want to get slashed!"
+doublequote = "I said \"hey\"!"
+
+puts "I am \a silly person."
+puts "I am \b silly person."
+puts "I am \f silly person."
+puts "I am \n silly person."
+puts "I am \r silly person."
+puts "I am \t silly person."
+puts "I am \v silly person."
+puts "I am \o silly person."
