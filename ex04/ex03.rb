@@ -1,7 +1,7 @@
 # number of cars
 cars = 100
 # How many humans each car can hold
-space_in_a_car = 4
+space_in_a_car = 5
 #Number of drivers
 drivers = 30
 #Number of passengers

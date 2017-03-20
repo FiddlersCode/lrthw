@@ -1,10 +1,18 @@
+# number of cars
 cars = 100
+# How many humans each car can hold
 space_in_a_car = 4.0
+#Number of drivers
 drivers = 30
+#Number of passengers
 passengers = 90
+#Number of empty cars
 cars_not_driven = cars - drivers
+#Number of cars in use
 cars_driven = drivers
+#How many people can be in the cars
 carpool_capacity = cars_driven * space_in_a_car
+#Average number of passengers per car
 average_passengers_per_car = passengers / cars_driven
 
 
