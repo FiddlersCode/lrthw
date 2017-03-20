@@ -4,14 +4,7 @@ puts "Your first variable is: #{first}"
 puts "Your second variable is: #{second}"
 puts "Your third variable is: #{third}"
 
-first, second = ARGV
-
-puts "Your first variable is: #{first}"
-puts "Your second variable is: #{second}"
-
-first, second, third, fourth = ARGV
-
-puts "Your first variable is: #{first}"
-puts "Your second variable is: #{second}"
-puts "Your third variable is: #{third}"
-puts "Your fourth variable is: #{fourth}"
+# prints prompt to console
+print "What would you like your variable to be? "
+# gets amount of money from user and converts to a float
+variable = $stdin.gets.chomp.to_f
