@@ -13,7 +13,7 @@ $stdin.gets
 
 puts "Opening the file..."
 # sets a variable called target which will open the filename and erase the contents of the file.
-# use a as a second argument if you wantt o append
+# use a as a second argument if you want to append
 target = open(filename, 'w')
 
 puts "Truncating the file.  Goodbye!"
@@ -30,6 +30,10 @@ line3 = $stdin.gets.chomp
 puts "I'm going to write these to the file."
 
 target.write(line1 + "\n" + line2  + "\n" + line3 + "\n")
+
+puts "And now, let's read the file!"
+
+print target.read
 
 puts "And finally, we close it."
 target.close
