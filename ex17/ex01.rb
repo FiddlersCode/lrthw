@@ -4,11 +4,11 @@ puts "Copying from #{from_file} to #{to_file}"
 
 # we could do these two on online, how?
 in_file = open(from_file)
-indata = infile.read
+indata = in_file.read
 
 puts "The input file is #{indata.length} bytes long"
 
-puts "Does the output file exist?  #{File.exist?(fo_file)}"
+puts "Does the output file exist?  #{File.exist?(to_file)}"
 puts "Ready, hit RETURN to continue, CTRL-C to abort."
 $stdin.gets
 
