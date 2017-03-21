@@ -33,7 +33,8 @@ target.write(line1 + "\n" + line2  + "\n" + line3 + "\n")
 
 puts "And now, let's read the file!"
 
-print target.read
+open(target)
+
 
 puts "And finally, we close it."
 target.close
