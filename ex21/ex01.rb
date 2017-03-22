@@ -31,6 +31,6 @@ puts "Age: #{age}, Height: #{height}, Weight: #{weight}, IQ: #{iq}"
 
 # a puzzle for the extra credit, type it in anyway
 
-what = add(age, subtract(height, multiply(weight, divide(iq))))
+what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
 
 puts "That becomes: #{what}.  Can you do it by hand?"
