@@ -5,15 +5,17 @@ states = {
   'California' => 'CA',
   'New York' => 'NY',
   'Michigan' => 'MI',
-  'Massachusetts' => 'MA'
+  'Massachusetts' => 'MA',
+  'Texas' => 'TX'
 }
 
 # create a basic set of states and some cities in them
 cities = {
   'CA' => 'San Francisco',
   'MI' => 'Detroit',
-  'FL' => 'Jacksonville'
-  'MA' => 'Falmouth'
+  'FL' => 'Jacksonville',
+  'MA' => 'Falmouth',
+  'TX' => 'Houston'
 }
 
 # add some more cities
@@ -25,11 +27,13 @@ cities['MA'] = 'Boston'
 puts '-' * 10
 puts "NY State has: #{cities['NY']}"
 puts "OR State has: #{cities['OR']}"
+puts "MA State has: #{cities['MA']}"
 
 # puts some states
 puts '-' * 10
 puts "Michigan's abbreviation is #{states['Michigan']}"
 puts "Florida's abbreviation is #{states['Florida']}"
+puts "Massachusetts' abbreviation is #{states['Massachusetts']}"
 
 # do it by using the state then cities dict
 puts '-' * 10
