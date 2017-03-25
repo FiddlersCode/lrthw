@@ -8,6 +8,8 @@ def start_precourse_2
     kickstart
   elsif program == "lrthw"
     lrthw
+  else
+    start_precourse_2
   end
 end
 
@@ -18,8 +20,28 @@ def pines
     puts "Great, head on to chapter 9!"
     pines_finish
   else
-    puts "Uh-oh, looks like you need to do a little review.  Go from the beginning of Pines.  Don't worry, it's fun!"
+      puts "Uh-oh, looks like you need to do a little review."
+    pine_lookup
+  end
+end
+
+def pine_lookup
+  pine_chapters = Hash.new("Dude, only up to 11 chapters!")
+  pine_chapters = {"1" => "Getting Started", "2" => "Numbers", "3" => "Letters", "4" => "Variables and Assignment", "5" => "Mixing It Up",
+    "6" => "More About Methods", "7" => "Flow Control", "8" => "Arrays and Iterators", "9" => "Writing Your Own Methods", "10" => "Classes",
+    "11" => "Blocks and Procs", "12" => "Beyond This Tutorial"}
+
+  puts "Type the number of the chapter you think you were on to see its title."
+  chapter_title = gets.chomp
+  puts pine_chapters[chapter_title]
+  puts "Do you want to look up any more chapters?"
+  answer3 = gets.chomp.downcase
+  if answer3 == "yes"
+    pine_lookup
+  elsif answer3 == "no"
     pines_finish
+  else
+    pine_lookup
   end
 end
 
