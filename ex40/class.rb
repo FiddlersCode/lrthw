@@ -9,3 +9,7 @@ class MyStuff
     puts "I AM CLASSY APPLES!"
   end
 end
+
+thing = MyStuff.new()
+thing.apple()
+puts thing.TANGERINE

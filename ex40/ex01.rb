@@ -1,2 +1,10 @@
 mystuff = {'apple' => "I AM APPLES!"}
 puts mystuff{'apple'}
+
+module MyStuff
+  def MyStuff.apple()
+    puts "I AM APPLES!"
+  end
+  # this is just a variable
+  TANGERINE = "Living reflection of a dream."
+end
