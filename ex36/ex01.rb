@@ -1,5 +1,6 @@
 # defines pratice method, asking user how many hours/day she practises
 def practice
+  puts "You are a violinist who wants to enter a competition."
   puts "How many hours a day do you practise?  Please enter a numeral."
   hours = gets.chomp.to_i
 # loop that while she practises fewer than 3 hours, she is told to work harder and then asked again how much she practises
