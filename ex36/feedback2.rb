@@ -26,10 +26,10 @@ def pines
 end
 
 def pine_lookup
-  pine_chapters = Hash.new("Dude, only up to 11 chapters!")
   pine_chapters = {"1" => "Getting Started", "2" => "Numbers", "3" => "Letters", "4" => "Variables and Assignment", "5" => "Mixing It Up",
     "6" => "More About Methods", "7" => "Flow Control", "8" => "Arrays and Iterators", "9" => "Writing Your Own Methods", "10" => "Classes",
     "11" => "Blocks and Procs", "12" => "Beyond This Tutorial"}
+  pine_chapters.default = "Dude, only up to 11 chapters!"
 
   puts "Type the number of the chapter you think you were on to see its title."
   chapter_title = gets.chomp

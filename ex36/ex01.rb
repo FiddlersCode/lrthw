@@ -9,7 +9,6 @@ def practice
     puts "Now how many hours do you practise?"
     hours = gets.chomp.to_i
   end
-
   if hours >= 3
     else puts "Good job!"
   end
