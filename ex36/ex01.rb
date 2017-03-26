@@ -10,7 +10,8 @@ def practice
     hours = gets.chomp.to_i
   end
   if hours >= 3
-    else puts "Good job!"
+    puts "Good job!"
+    lessons
   end
 end
 
@@ -20,8 +21,9 @@ def lessons
   lesson_answer = gets.chomp
   if lesson_answer.downcase == "yes"
     puts "Keep up the good work."
+    record
   else puts "Back to square one."
-    start # user has to go to the start of the program if no lessons
+    practice # user has to go to the start of the program if no lessons
   end
 end
 
@@ -30,6 +32,7 @@ def record # defines record method, asking user if she has recorded herself.
   record_answer = gets.chomp
   if record_answer.downcase == "yes"
     puts "It's hard to listen to yourself, but good work!"
+    first_round
   else puts "You're your own best teacher - record yourself before going on!"
     record # sends user back to beginning of record method
   end
@@ -43,6 +46,7 @@ def first_round
     play_final_round
   else puts "Better luck next time.  Why not go and watch the final round and support your friends?"
     watch_final_round
+    practice
   end
 end
 
@@ -56,14 +60,8 @@ def play_final_round
   if final_round_answer.downcase == "yes"
     puts "WOOOHOO!! You won!"
   else puts "You did so well - try again next year."
+    practice
   end
 end
 
-def start
-  practice
-  lessons
-  record
-  first_round
-end
-
-start
+practice
