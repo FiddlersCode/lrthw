@@ -2,11 +2,11 @@ def start_precourse_2
   puts "You are a Makers Academy student on the Precourse week 2.\nYou have a choice to pick one of three programming tools:\n1. Chris Pines Learn to Program\n2. Ruby Kickstart\n3. Learn Ruby the Hard Way"
   puts "Which do you choose, Pines, Kickstart or LRTHW?"
   program = gets.chomp.downcase
-  if program == "pines"
+  if program =~ /pines|1/
     pines
-  elsif program == "kickstart"
+  elsif program =~ /kickstart|2/
     kickstart
-  elsif program == "lrthw"
+  elsif program =~ /lrthw|3/
     lrthw
   else
     start_precourse_2
