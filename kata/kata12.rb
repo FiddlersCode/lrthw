@@ -1,7 +1,14 @@
 def to_camel_case(str)
   if str =~ /-/
     arr = str.split('-')
-    arr.map(&:capitalize).join
+    if arr[0][0].downcase == true
+      arr.map_with_index { |x, i|
+        if i > 0
+        x.capitalize
+        end}
+    else
+      arr.map(&:capitalize).join
+    end
   else str =~ /_/
     arr = str.split('_')
     arr.map(&:capitalize).join
